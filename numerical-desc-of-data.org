@@ -1,0 +1,42 @@
+#+title:Numerical Desc Of Data
+
+* Measures of central tendency
+** Avarage
+The arithmetic avarage is defined by the sum of the observations value divided by the number of observations
+
+\[
+M_{a}=\frac{1}{n}\sum_{i=1}^{n}x_i
+\]
+
+It is suitable for numerical and quantitative data, not for categorical
+
+** Median
+The median is the value which occupies the central place when a set is ordered in ascending or descending order. Median can be used for quantitative data.
+It's easy to calculate:
+ - if set is odd: \[\frac{(n+1)}{2}\]
+ - if set is even: it is given by the mean between \[\frac{n}{2}\] and \[\frac{n}{2+1}\]
+** Mode
+The mode is the element in the set which is most frequent
+* Measures of dispersion
+** Variance
+The variance is how much the data diverge from avarage value. We measure it by calculating the avarage distance between data points and the avarage value, for small points the result can be a neative number. For this reason we square the result.
+\[\sigma_{X}^2=\frac{\sum_{i}(x_i-\mu_X)^2}{n}\]
+
+Variance is a good dispersion index but it doesn't have the same unit of our data, being a squared value.
+** Standard deviation
+For the previous reason usually we compute the root of the variance, and we get a dispersion index with the same unit as our data.
+\[\sigma=\sqrt{\frac{\sum_{i}^{N}(x_i-\mu_{X})^2}{N}}\]
+* Relationships between two variables
+** Covariance
+The covariance is a measure of linear relationships:
+ - a positive value means a direct relationship
+ - a negative value means an inverse relationship
+
+\[Cov(X, Y)=\frac{\sum(X_i-\overline{X})(Y_j-\overline{Y})}{n}\]
+
+With covariance it is difficult to measure the intensity of the relationship
+** Pearson Correlation
+To solve covariance problems we use Pearson correlation, which enables us to measure if there is a relationship between two variables and its direction.
+ - p > 0: positive correlation
+ - p < 0: negative correlation
+ - p = 0: no correlation

@@ -1,0 +1,42 @@
+#+title: Fundamentals
+
+* Basic definitions
+** Machine Learning
+A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at task T, measured by P, improves with experience *E*.
+
+* Types of Machine Learning systems
+** Ways of learning
+*** Supervised Learning
+In supervised learning the training set includes the input pattern and the desired outputs called /labels/. Learning modifies the model such that the actual model outputs are more and more similar to the labels.
+
+Typical tasks are:
+ - Regression
+ - Classification
+*** Unsupervised learning
+Exploit an unlabeled dataset containing many features, then learn useful properties of the structure of this dataset.
+Learning modifies the model such that it reflects some regularities and similarities that are found in data.
+
+Typical tasks are:
+
+*** Semi-supervised learning
+Dataset contains only a limited amount of labeled data, so we increase the amount by considering similarities and proximity
+
+* Overfitting and Underfitting
+** Overfitting
+It means that the model perform well on the training set but does not generalize well and perform poorly at release.
+Overfitting happens when the model is too complex relative to the amount and noisiness of training data. A solution is to constrain the model to make it simpler and reduce the risk of overfitting, we call it *regularization*.
+
+*** Hyperparameter
+An hyperparameter is a parameter of a learning algorithm, it must be set before starting the training and remains constant in the meantime. We use it to control the amount of regularization to apply during learning
+
+** Underfitting
+It occurs when the model is too simple to learn the underlying structure of the data.
+
+* Testing
+#+BEGIN_SRC python
+str = 'Hello World'
+return str
+#+END_SRC
+
+#+RESULTS:
+: Hello World
